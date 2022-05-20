@@ -1,0 +1,4 @@
+<form class="box" [formGroup]="formGroup">
+    <mat-checkbox formControlName="check">{{ todo.nome }}</mat-checkbox>
+    <mat-icon *ngIf="formGroup.get('check').value" (click)="deleteItem()">delete</mat-icon>
+</form>

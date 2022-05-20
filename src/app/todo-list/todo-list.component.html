@@ -1,0 +1,4 @@
+<div class="todo-list">
+    <app-todo [todo]="item" *ngFor="let item of array" (deletarItem)="deletarItem($event)"></app-todo>
+    <span class="mensagem-vazia" *ngIf="array.length === 0">Lista vazia. Por favor escreva algo para iniciar a sua lista</span>
+</div>

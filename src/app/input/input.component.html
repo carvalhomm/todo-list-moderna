@@ -1,0 +1,7 @@
+<form [formGroup]="formGroup" class="input">
+    <mat-form-field>
+        <mat-label>Item a ser adicionado</mat-label>
+        <input matInput formControlName="item" type="text">
+    </mat-form-field>
+    <button mat-button (click)="adicionarItem()">Adicionar</button>
+</form>
